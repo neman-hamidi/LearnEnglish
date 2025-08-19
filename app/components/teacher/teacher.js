@@ -33,8 +33,8 @@ const teacher = () => (
       className="absolute bottom-0 left-0 -rotate-90"
     />
 
-    <p className="text-center text-2xl font-bold">مدرس های زبانـــیا</p>
-    <div className="flex items-center gap-10 justify-center">
+    <p className="text-center text-2xl font-bold translate-y-3 md:translate-y-0">مدرس های زبانـــیا</p>
+    <div className="flex items-center gap-10 justify-center flex-wrap mt-6 md:mt-0">
       {details.map((item, index) => (
         <TeacherItem key={index} {...item} />
       ))}

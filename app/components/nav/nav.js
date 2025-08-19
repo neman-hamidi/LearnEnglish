@@ -14,7 +14,7 @@ const nav = () => (
           />
         </span>
       </div>
-      <ul className="flex gap-10 text-lg">
+      <ul className="md:flex hidden gap-10 text-lg  ">
         <li>خانه</li>
         <li className="flex items-center gap-1">
           زبان ها
@@ -28,7 +28,7 @@ const nav = () => (
       </ul>
     </div>
     <div>
-      <button type="submit" className="btn-custom">
+      <button type="submit" className="btn-custom text-xs">
         ورود / ثبت نام
       </button>
     </div>

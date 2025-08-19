@@ -19,7 +19,7 @@ const header = () => (
     />
     <div className="w-9/10 mx-auto flex items-center justify-between pt-16">
       <div>
-        <div className="text-[64px] w-96">
+        <div className="md:text-[64px] md:leading-[6rem] text-3xl md:w-96">
           <span>یادگیری </span>
           <br />
           <h2>راحت زبان</h2>
@@ -27,7 +27,7 @@ const header = () => (
             <div className="flex gap-4">
               همراه با<h1 className="text-praimary font-bold">زبانیا</h1>
             </div>
-            <span className="absolute top-0 left-8">
+            <span className="absolute md:top-0 md:left-8 -top-6 left-[62px]" >
               <Image
                 src="/images/teacher2.png"
                 alt="teacher"
@@ -41,7 +41,7 @@ const header = () => (
           ما اینجا هستیم که تو پیشرفت کنی
         </p>
         <div className="flex gap-10">
-          <button type="submit" className="btn-custom text-sm">
+          <button type="submit" className="btn-custom text-xs md:text-sm">
             مشاهده دوره ها
           </button>
           <p className="flex items-center">
@@ -52,7 +52,7 @@ const header = () => (
           </p>
         </div>
       </div>
-      <div className="z-30">
+      <div className="z-30 hidden md:flex">
         <Image src="/images/img.png" alt="main-img" width="759" height="535" />
       </div>
     </div>

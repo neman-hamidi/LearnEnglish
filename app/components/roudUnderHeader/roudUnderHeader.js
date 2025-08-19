@@ -4,8 +4,8 @@ import Language from "./language/language";
 import details from "./Text";
 const roudUnderHeader = () => (
   <>
-    <div className="relative">
-      <div className="mr-52 -translate-y-10">
+    <div className="relative h-24 md:h-auto">
+      <div className="mr-52 -translate-y-10 hidden md:block">
         <Image
           src="/images/Vector 10.png"
           width="473"
@@ -20,7 +20,7 @@ const roudUnderHeader = () => (
           className="-translate-y-16 translate-x-12"
         />
       </div>
-      <div className="absolute top-12 left-0 right-0">
+      <div className="absolute md:top-12 left-0 right-0 top-2">
         <Image
           src="/images/side.png"
           width="1474"
@@ -30,7 +30,7 @@ const roudUnderHeader = () => (
         />
       </div>
     </div>
-    <div className="grid grid-cols-2 gap-8 w-9/10 mx-auto">
+    <div className="grid md:grid-cols-2 gap-8 w-9/10 mx-auto ">
       {details.map((item, index) => (
         <Language key={index} {...item}>
           {item.imgs.map((one, index) => (
@@ -40,6 +40,7 @@ const roudUnderHeader = () => (
               width="37"
               height="37"
               alt="imgs"
+              className="w-5 md:w-9 h-5 md:h-9"
             />
           ))}
         </Language>

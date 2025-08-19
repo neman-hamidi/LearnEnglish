@@ -4,7 +4,7 @@ import details from "./Text";
 const opinion = () => (
   <section className="bg-[#F0F0F0] py-8">
     <p className="text-2xl font-bold mb-10 text-center">دیدگاه دانشجویان</p>
-    <div className="flex items-center justify-center gap-6 w-9/10 mx-auto">
+    <div className="flex items-center justify-center gap-6 w-9/10 mx-auto flex-wrap md:flex-nowrap">
       {details.map((item, index) => (
         <OpinionItem key={index} {...item} />
       ))}

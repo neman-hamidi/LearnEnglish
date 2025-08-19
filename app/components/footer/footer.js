@@ -10,7 +10,7 @@ const footer = () => (
       alt="img-footer"
       className="absolute -top-24 right-0"
     />
-    <div className="ml-auto mr-14 flex gap-20 pt-10">
+    <div className="ml-auto mr-14 flex flex-wrap gap-20 pt-10">
       <div>
         <div className="relative w-fit">
           <h1 className="text-praimary font-bold text-6xl translate-x-0">
@@ -59,14 +59,15 @@ const footer = () => (
         ))}
       </div>
     </div>
-    <div className="absolute bottom-0 left-0">
+    
+    <div className="hidden md:block md:absolute bottom-0 left-0">
       <Image
         src="/images/Vector 25.png"
         width="728"
         height="609"
         alt="footer-img"
       />
-      <div className="text-white absolute bottom-24 left-6 text-center">
+      <div className="text-white absolute bottom-24 left-6 text-center hidden md:block">
         <h2 className="font-bold text-2xl">باشگاه زبانــیا</h2>
         <p className="font-dana-light text-xl">کلی خبر خوب داریم</p>
         <input

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const bestSelect = () => (
   <>
-    <div className="relative">
+    <div className="relative hidden md:block">
       <div>
         <Image
           src="/images/Vector 14.png"
@@ -34,7 +34,7 @@ const bestSelect = () => (
       width="1294"
       height="781"
       alt="main-img"
-      className="mx-auto"
+      className="mx-auto hidden md:block"
     />
   </>
 );
